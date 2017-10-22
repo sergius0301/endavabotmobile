@@ -44,8 +44,17 @@
 
 <body>
     <div class="Wrapper">
-        <iframe src='https://webchat.botframework.com/embed/EndavBot?s=uoBjOs0b80Y.cwA.TFw.xRLUBH29WG8tE5cIUr2kD-OHPFinGvSUJ9m4aWgv938' allowfullscreen frameborder="0" scrolling="no"></iframe>
-	</div>
+         <div id="bot"/>
+		 
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+    <script>
+      BotChat.App({
+        directLine: { secret: '6AafPe9K9HE.cwA.iSg.IR6Gqz7QfG56iwyIX7bEW_92KXMFYGt8x4dbXk8QfJs' },
+        user: { id: 'userid' },
+        bot: { id: 'botid' },
+        resize: 'detect'
+      }, document.getElementById("bot"));
+    </script></div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">

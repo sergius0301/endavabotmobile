@@ -41,7 +41,7 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
+   /*  text-transform:uppercase; */
     width:100%;
 }
 
@@ -173,7 +173,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 .wc-message-groups {
   background-color: rgb(239, 239, 240);
   bottom: 50px;
-  height: 484px;
+  height: 510px;
   left: 0;
   transform: translateY(0);
   overflow-x: hidden;
@@ -260,7 +260,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 
 /* views */
 .wc-chatview-panel {
-    height: 595px;
+    height: 620px;
   overflow: hidden;
   position: absolute;
   right: 0;
@@ -646,3 +646,9 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 
 .wc-app ::-webkit-scrollbar-thumb {
   background-color: #dbdee1; }
+.wc-header span {
+  display: none;
+}
+.wc-header:after {
+  content: 'Endava Live Assistant';
+}
